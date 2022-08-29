@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: permission
+  labels:
+    app: permission
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: permission
+  template:
+    metadata:
+      labels:
+        app: permission
+      annotations:
+        dapr.io/enabled: "true"
+        dapr.io/app-id: "permission"
+        dapr.io/app-port: "5173"
+        dapr.io/enable-api-logging: "true"
+        dapr.io/sidecar-listen-addresses: "[::],0.0.0.0"
+    spec:
+      containers:
+      - name: permission
+        image: permission
+        args: ["--urls", "http://*:5173"]
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5173
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: permission
+  labels:
+    app: permission
+spec:
+  selector:
+    app: permission
+  ports:
+  - protocol: TCP
+    port: 5573
+    targetPort: 5173
+  type: NodePort

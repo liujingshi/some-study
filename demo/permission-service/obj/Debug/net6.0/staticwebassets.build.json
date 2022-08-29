@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "l62rkpWpA1pwBieb3UT3OUU8ClXmUfudFdv5Cen5+OQ=",
+  "Source": "permission-service",
+  "BasePath": "_content/permission-service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
