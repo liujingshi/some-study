@@ -1,0 +1,17 @@
+E:\Code\Project\some-study\demo\pub-sub-c1\bin\Debug\net6.0\pub-sub-c1.exe
+E:\Code\Project\some-study\demo\pub-sub-c1\bin\Debug\net6.0\pub-sub-c1.deps.json
+E:\Code\Project\some-study\demo\pub-sub-c1\bin\Debug\net6.0\pub-sub-c1.runtimeconfig.json
+E:\Code\Project\some-study\demo\pub-sub-c1\bin\Debug\net6.0\pub-sub-c1.dll
+E:\Code\Project\some-study\demo\pub-sub-c1\bin\Debug\net6.0\pub-sub-c1.pdb
+E:\Code\Project\some-study\demo\pub-sub-c1\bin\Debug\net6.0\RabbitMQ.Client.dll
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\pub-sub-c1.csproj.AssemblyReference.cache
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\pub-sub-c1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\pub-sub-c1.AssemblyInfoInputs.cache
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\pub-sub-c1.AssemblyInfo.cs
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\pub-sub-c1.csproj.CoreCompileInputs.cache
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\pub-sub-c1.csproj.CopyComplete
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\pub-sub-c1.dll
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\refint\pub-sub-c1.dll
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\pub-sub-c1.pdb
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\pub-sub-c1.genruntimeconfig.cache
+E:\Code\Project\some-study\demo\pub-sub-c1\obj\Debug\net6.0\ref\pub-sub-c1.dll

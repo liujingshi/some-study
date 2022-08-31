@@ -1,0 +1,17 @@
+E:\Code\Project\some-study\demo\consumer1\bin\Debug\net6.0\consumer1.exe
+E:\Code\Project\some-study\demo\consumer1\bin\Debug\net6.0\consumer1.deps.json
+E:\Code\Project\some-study\demo\consumer1\bin\Debug\net6.0\consumer1.runtimeconfig.json
+E:\Code\Project\some-study\demo\consumer1\bin\Debug\net6.0\consumer1.dll
+E:\Code\Project\some-study\demo\consumer1\bin\Debug\net6.0\consumer1.pdb
+E:\Code\Project\some-study\demo\consumer1\bin\Debug\net6.0\RabbitMQ.Client.dll
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\consumer1.csproj.AssemblyReference.cache
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\consumer1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\consumer1.AssemblyInfoInputs.cache
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\consumer1.AssemblyInfo.cs
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\consumer1.csproj.CoreCompileInputs.cache
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\consumer1.csproj.CopyComplete
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\consumer1.dll
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\refint\consumer1.dll
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\consumer1.pdb
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\consumer1.genruntimeconfig.cache
+E:\Code\Project\some-study\demo\consumer1\obj\Debug\net6.0\ref\consumer1.dll

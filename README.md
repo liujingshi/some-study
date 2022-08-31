@@ -7,6 +7,11 @@
 
 这里选型 RabbitMQ
 
+RabbitMQ 基本使用
+
+---
+下面的不算 是错误的
+
 运行环境 Kubernetes，Sidecar 模式，使用 Dapr 作为 Sidecar
 
 ![MQ-process](./md-images/MQ-process.png)
