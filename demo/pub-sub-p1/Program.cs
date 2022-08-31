@@ -20,7 +20,7 @@ public class Program
 
         var channel = connection.CreateModel();
 
-        channel.ExchangeDeclare(exchange: "e1",
+        channel.ExchangeDeclare(exchange: "exchange.fanout",
                                 type: "fanout");
 
         while (true)
@@ -31,12 +31,12 @@ public class Program
             string message = input.ToString();
             var body = Encoding.UTF8.GetBytes(message);
 
-            channel.BasicPublish(exchange: "e1",
+            channel.BasicPublish(exchange: "exchange.fanout",
                                  routingKey: "",
                                  basicProperties: null,
                                  body: body);
 
-            Console.WriteLine("发送消息 '{0}' 到交换机 e1", message);
+            Console.WriteLine("发送消息 '{0}' 到交换机 exchange.fanout", message);
         }
     }
 }

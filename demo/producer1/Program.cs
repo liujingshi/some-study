@@ -20,7 +20,7 @@ public class Program
 
         var channel = connection.CreateModel();
 
-        channel.QueueDeclare(queue: "q1",
+        channel.QueueDeclare(queue: "queue1",
                              durable: true,
                              exclusive: false,
                              autoDelete: false,
@@ -38,11 +38,11 @@ public class Program
             var body = Encoding.UTF8.GetBytes(message);
 
             channel.BasicPublish(exchange: "",
-                                 routingKey: "q1",
+                                 routingKey: "queue1",
                                  basicProperties: null,
                                  body: body);
 
-            Console.WriteLine("发送消息 '{0}' 到队列 q1", message);
+            Console.WriteLine("发送消息 '{0}' 到队列 queue1", message);
         }
     }
 }

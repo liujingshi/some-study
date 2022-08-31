@@ -1,0 +1,17 @@
+E:\code\project\some-study\demo\topics-p1\bin\Debug\net6.0\topics-p1.exe
+E:\code\project\some-study\demo\topics-p1\bin\Debug\net6.0\topics-p1.deps.json
+E:\code\project\some-study\demo\topics-p1\bin\Debug\net6.0\topics-p1.runtimeconfig.json
+E:\code\project\some-study\demo\topics-p1\bin\Debug\net6.0\topics-p1.dll
+E:\code\project\some-study\demo\topics-p1\bin\Debug\net6.0\topics-p1.pdb
+E:\code\project\some-study\demo\topics-p1\bin\Debug\net6.0\RabbitMQ.Client.dll
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\topics-p1.csproj.AssemblyReference.cache
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\topics-p1.GeneratedMSBuildEditorConfig.editorconfig
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\topics-p1.AssemblyInfoInputs.cache
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\topics-p1.AssemblyInfo.cs
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\topics-p1.csproj.CoreCompileInputs.cache
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\topics-p1.csproj.CopyComplete
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\topics-p1.dll
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\refint\topics-p1.dll
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\topics-p1.pdb
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\topics-p1.genruntimeconfig.cache
+E:\code\project\some-study\demo\topics-p1\obj\Debug\net6.0\ref\topics-p1.dll

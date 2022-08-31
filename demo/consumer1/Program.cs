@@ -21,7 +21,7 @@ public class Program
 
         var channel = connection.CreateModel();
 
-        channel.QueueDeclare(queue: "q1",
+        channel.QueueDeclare(queue: "queue1",
                              durable: true,
                              exclusive: false,
                              autoDelete: false,
@@ -32,10 +32,10 @@ public class Program
         {
             var body = args.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);
-            Console.WriteLine("从 q1 队列消费消息 {0}", message);
+            Console.WriteLine("从 queue1 队列消费消息 {0}", message);
         };
 
-        channel.BasicConsume(queue: "q1",
+        channel.BasicConsume(queue: "queue1",
                              autoAck: true,
                              consumer: consumer);
 

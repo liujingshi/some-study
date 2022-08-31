@@ -21,7 +21,7 @@ public class Program
 
         var channel = connection.CreateModel();
 
-        channel.ExchangeDeclare(exchange: "e1",
+        channel.ExchangeDeclare(exchange: "exchange.fanout",
                                 type: "fanout");
 
         string queueName = args.Length > 0 ? args[0] : "";
@@ -36,7 +36,7 @@ public class Program
                                  arguments: null);
 
         channel.QueueBind(queue: queueName,
-                          exchange: "e1",
+                          exchange: "exchange.fanout",
                           routingKey: "");
 
         var consumer = new EventingBasicConsumer(channel);
@@ -44,7 +44,7 @@ public class Program
         {
             var body = args.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);
-            Console.WriteLine("从 e1 交换机 {0} 队列消费消息 {1}", queueName, message);
+            Console.WriteLine("从 exchange.fanout 交换机 {0} 队列消费消息 {1}", queueName, message);
         };
 
         channel.BasicConsume(queue: queueName,
