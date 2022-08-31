@@ -1,0 +1,17 @@
+E:\code\project\some-study\demo\rpc-client\bin\Debug\net6.0\rpc-client.exe
+E:\code\project\some-study\demo\rpc-client\bin\Debug\net6.0\rpc-client.deps.json
+E:\code\project\some-study\demo\rpc-client\bin\Debug\net6.0\rpc-client.runtimeconfig.json
+E:\code\project\some-study\demo\rpc-client\bin\Debug\net6.0\rpc-client.dll
+E:\code\project\some-study\demo\rpc-client\bin\Debug\net6.0\rpc-client.pdb
+E:\code\project\some-study\demo\rpc-client\bin\Debug\net6.0\RabbitMQ.Client.dll
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\rpc-client.csproj.AssemblyReference.cache
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\rpc-client.GeneratedMSBuildEditorConfig.editorconfig
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\rpc-client.AssemblyInfoInputs.cache
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\rpc-client.AssemblyInfo.cs
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\rpc-client.csproj.CoreCompileInputs.cache
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\rpc-client.csproj.CopyComplete
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\rpc-client.dll
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\refint\rpc-client.dll
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\rpc-client.pdb
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\rpc-client.genruntimeconfig.cache
+E:\code\project\some-study\demo\rpc-client\obj\Debug\net6.0\ref\rpc-client.dll
