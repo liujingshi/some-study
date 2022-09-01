@@ -37,7 +37,7 @@ public class Program
 
         channel.QueueBind(queue: queueName,
                           exchange: "exchange.fanout",
-                          routingKey: "");
+                          routingKey: queueName + "_c");
 
         var consumer = new EventingBasicConsumer(channel);
         consumer.Received += (sender, args) =>

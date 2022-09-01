@@ -5,7 +5,7 @@ namespace producer1;
 
 public class Program
 {
-    public static void Main()
+    public static void Main(string[] args)
     {
         var factory = new ConnectionFactory()
         {
@@ -32,7 +32,7 @@ public class Program
             var body = Encoding.UTF8.GetBytes(message);
 
             channel.BasicPublish(exchange: "exchange.fanout",
-                                 routingKey: "",
+                                 routingKey: args.Length > 0 ? args[0] : "",
                                  basicProperties: null,
                                  body: body);
 
