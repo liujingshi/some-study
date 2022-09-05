@@ -1,0 +1,12 @@
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\bin\Debug\net6.0\rabbitmq-eventbus.deps.json
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\bin\Debug\net6.0\rabbitmq-eventbus.dll
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\bin\Debug\net6.0\rabbitmq-eventbus.pdb
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\obj\Debug\net6.0\rabbitmq-eventbus.csproj.AssemblyReference.cache
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\obj\Debug\net6.0\rabbitmq-eventbus.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\obj\Debug\net6.0\rabbitmq-eventbus.AssemblyInfoInputs.cache
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\obj\Debug\net6.0\rabbitmq-eventbus.AssemblyInfo.cs
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\obj\Debug\net6.0\rabbitmq-eventbus.csproj.CoreCompileInputs.cache
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\obj\Debug\net6.0\rabbitmq-eventbus.dll
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\obj\Debug\net6.0\refint\rabbitmq-eventbus.dll
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\obj\Debug\net6.0\rabbitmq-eventbus.pdb
+E:\Code\Project\some-study\mq\rabbitmq-eventbus\obj\Debug\net6.0\ref\rabbitmq-eventbus.dll

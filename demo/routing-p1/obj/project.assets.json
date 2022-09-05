@@ -106,24 +106,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\LiuJingShi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\code\\project\\some-study\\demo\\routing-p1\\routing-p1.csproj",
+      "projectUniqueName": "E:\\Code\\Project\\some-study\\demo\\routing-p1\\routing-p1.csproj",
       "projectName": "routing-p1",
-      "projectPath": "E:\\code\\project\\some-study\\demo\\routing-p1\\routing-p1.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\code\\project\\some-study\\demo\\routing-p1\\obj\\",
+      "projectPath": "E:\\Code\\Project\\some-study\\demo\\routing-p1\\routing-p1.csproj",
+      "packagesPath": "C:\\Users\\LiuJingShi\\.nuget\\packages\\",
+      "outputPath": "E:\\Code\\Project\\some-study\\demo\\routing-p1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\LiuJingShi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -169,7 +164,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
