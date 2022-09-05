@@ -20,6 +20,9 @@ namespace rabbitmq_eventbus
             channel.Channel.QueueBind("qt", "et", "DriverAddSuccessEvent", null);
         }
 
+        /// <summary>
+        /// 订阅消息
+        /// </summary>
         public void Subscribe()
         {
             var channel = _connection.GetChannel();
@@ -33,11 +36,17 @@ namespace rabbitmq_eventbus
             channel.Channel.BasicConsume("qt", true, "driver", false, false, null, consumer);
         }
 
+        /// <summary>
+        /// 发布消息
+        /// </summary>
         public void Publish()
         {
             var channel = _connection.GetChannel();
             channel.IsUsing = true;
             CreateExchangeAndQueue(channel);
+
+            // 内容
+            var body = JsonSerializer.SerializeToUtf8Bytes(new { Name = "B" });
 
             // 回调
             channel.Channel.BasicAcks += (sender, e) =>
@@ -45,18 +54,14 @@ namespace rabbitmq_eventbus
                 // 消息已送达 信道停止使用
                 channel.IsUsing = false;
             };
-            channel.Channel.BasicAcks += (sender, e) =>
+            channel.Channel.BasicNacks += (sender, e) =>
             {
                 // 消息未送达
                 // ... 重新发送消息
+                channel.Channel.BasicPublish("et", "DriverAddSuccessEvent", true, null, body);
             };
 
-            // 内容
-            var body = JsonSerializer.SerializeToUtf8Bytes(new { Name="B" });
-
             channel.Channel.BasicPublish("et", "DriverAddSuccessEvent", true, null, body);
-
-
         }
     }
 }

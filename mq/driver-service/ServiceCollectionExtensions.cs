@@ -18,7 +18,11 @@ public static class ServiceCollectionExtensions
                 Port = int.Parse(rabbitMQSetting["Port"]),
                 VirtualHost = rabbitMQSetting["VirtualHost"],
                 UserName = rabbitMQSetting["UserName"],
-                Password = rabbitMQSetting["Password"]
+                Password = rabbitMQSetting["Password"],
+                AutomaticRecoveryEnabled = true,
+                TopologyRecoveryEnabled = true,
+                NetworkRecoveryInterval = TimeSpan.FromSeconds(10),
+                RequestedHeartbeat = TimeSpan.FromSeconds(60)
             };
 
             return new RabbitMQConnection(connectionFactory);
