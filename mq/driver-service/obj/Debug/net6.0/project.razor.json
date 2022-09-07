@@ -1,5 +1,5 @@
 {
-  "FilePath": "e:\\Code\\Project\\some-study\\demo\\permission-service\\permission-service.csproj",
+  "FilePath": "e:\\Code\\Project\\some-study\\mq\\driver-service\\driver-service.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16295,7 +16295,7 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "permission_service",
+  "RootNamespace": "driver_service",
   "Documents": [],
   "SerializationFormat": "0.2"
 }
