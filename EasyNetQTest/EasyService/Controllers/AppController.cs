@@ -20,10 +20,21 @@ public class AppController : ControllerBase
         _rabbitBus = rabbitBus;
     }
 
+    [HttpPost]
+    public ActionResult Post([FromForm] string msg)
+    {
+        _rabbitBus.PubSub.Publish(new TextMessage(msg));
+
+        return Ok(new
+        {
+            success = true,
+        });
+    }
+
     [HttpGet]
     public IEnumerable<object> Get()
     {
-        _rabbitBus.PubSub.Subscribe<TextMessage>("test", async (textMessage) => 
+        _rabbitBus.PubSub.Subscribe<TextMessage>("test", async (textMessage) =>
         {
             await Task.Delay(800);
             Console.WriteLine(textMessage.Text);

@@ -23,9 +23,9 @@ public class PublishController : ControllerBase
     [HttpPost]
     public ActionResult Post([FromForm] string msg) 
     {
-        //_rabbitBus.PubSub.Publish(new TextMessage(msg));
+        _rabbitBus.PubSub.Publish(new TextMessage(msg));
 
-        Pb(msg);
+        //Pb(msg);
 
         return Ok(new
         {

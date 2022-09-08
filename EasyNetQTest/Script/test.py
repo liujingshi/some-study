@@ -23,11 +23,18 @@ def pub():
     for i in range(100):
         time.sleep(0.5)
         asyncPrint("{0}/100".format(i))
-        asyncPost("http://localhost:5278/Publish", { "msg": "hello{0}".format(i) })
+        asyncPost("http://localhost:5278/Publish", { "msg": "Publish{0}".format(i) })
+
+def pubapp():
+    for i in range(100):
+        time.sleep(0.5)
+        asyncPrint("{0}/100".format(i))
+        asyncPost("http://localhost:5148/App", { "msg": "App{0}".format(i) })
 
 def sub():
     asyncGet("http://localhost:5148/App");
 
 if __name__ == "__main__":
-    sub()
+    # sub()
     # pub()
+    pubapp()
