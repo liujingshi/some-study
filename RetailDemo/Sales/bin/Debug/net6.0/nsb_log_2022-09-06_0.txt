@@ -1,0 +1,4 @@
+﻿2022-09-06 11:03:18.339 INFO  Logging to 'E:\code\project\some-study\RetailDemo\Sales\bin\Debug\net6.0\' with level Info
+2022-09-06 11:03:18.427 INFO  No valid license could be found. Falling back to trial license with start date '2022-09-06'.
+2022-09-06 11:03:31.907 INFO  Initiating shutdown.
+2022-09-06 11:03:31.917 INFO  Shutdown complete.

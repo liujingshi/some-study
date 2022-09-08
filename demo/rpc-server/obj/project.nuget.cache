@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cOdeogY/rorfXB/fIX+xU/CwNJkWx5NW6x2kIrBa+YFm8HWJqefzfw+9jFDPrB5LYJhXd8240jp4u4s38bIojA==",
+  "dgSpecHash": "USxXC30aVrc94xE4i7ZhBGl978Uj97MRC3hqjdnKxogKiPIFgB1Xbd75ku/lJxFHd6+roy/jbWXrYEvFWMGDyg==",
   "success": true,
-  "projectFilePath": "E:\\Code\\Project\\some-study\\demo\\rpc-server\\rpc-server.csproj",
+  "projectFilePath": "E:\\code\\project\\some-study\\demo\\rpc-server\\rpc-server.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\LiuJingShi\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
-    "C:\\Users\\LiuJingShi\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\LiuJingShi\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

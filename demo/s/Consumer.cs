@@ -12,7 +12,6 @@ public class Consumer
     private readonly ConnectionFactory connectionFactory;
     private IConnection? connection = null;
     private IModel? channel = null;
-    private EventingBasicConsumer? consumer = null;
 
     public Consumer()
     {
@@ -20,10 +19,11 @@ public class Consumer
         connectionFactory = new ConnectionFactory()
         {
             HostName = "localhost",
-            Port = 25671,
+            Port = 5672,
             VirtualHost = "/",
             UserName = "guest",
-            Password = "guest"
+            Password = "guest",
+            DispatchConsumersAsync = true
         };
         // 开启连接
         CreateConnect();
@@ -67,22 +67,44 @@ public class Consumer
     private void CreateConsumer()
     {
         if (channel == null) return;
-        consumer = new EventingBasicConsumer(channel);
-        consumer.Received += Received;
+        if (connection == null) return;
+        var consumer1 = new AsyncEventingBasicConsumer(channel);
+        consumer1.Received += async (sender, args) => await AsyncReceived(sender, args, channel);
         channel.BasicConsume(
             queue: QUEUE_NAME,
-            autoAck: true,
-            consumer: consumer
+            autoAck: false,
+            consumer: consumer1
+        );
+
+        var channel1 = connection.CreateModel();
+        var consumer2 = new AsyncEventingBasicConsumer(channel1);
+        consumer2.Received += async (sender, args) => await AsyncReceived(sender, args, channel1);
+        channel1.BasicConsume(
+            queue: QUEUE_NAME,
+            autoAck: false,
+            consumer: consumer2
+        );
+
+        var channel2 = connection.CreateModel();
+        var consumer3 = new AsyncEventingBasicConsumer(channel2);
+        consumer3.Received += async (sender, args) => await AsyncReceived(sender, args, channel2);
+        channel2.BasicConsume(
+            queue: QUEUE_NAME,
+            autoAck: false,
+            consumer: consumer3
         );
     }
 
-    private void Received(object? sender, BasicDeliverEventArgs args)
+    private async Task AsyncReceived(object? sender, BasicDeliverEventArgs args, IModel channelx)
     {
         byte[] body = args.Body.ToArray();
         string message = Encoding.UTF8.GetString(body);
-        string routingKey = args.RoutingKey;
-        Console.WriteLine("0从 {0} 交换机 {1} 队列 {2} 路由键消费消息 {3}", EXCHANGE_NAME, QUEUE_NAME, routingKey, message);
+        Console.WriteLine("[{0}] 从 {1} 信道 得到消息 {2}", DateTime.Now.ToLongTimeString(), channelx.ChannelNumber, message);
+        await Task.Delay(3000);
+        Console.WriteLine("[{0}] 消息 {1} 消费完成", DateTime.Now.ToLongTimeString(), message);
+        channelx.BasicAck(args.DeliveryTag, false);
     }
+
 
     public void Run()
     {

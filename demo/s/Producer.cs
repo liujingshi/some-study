@@ -16,10 +16,11 @@ public class Producer
         connectionFactory = new ConnectionFactory()
         {
             HostName = "localhost",
-            Port = 25671,
+            Port = 5672,
             VirtualHost = "/",
             UserName = "guest",
-            Password = "guest"
+            Password = "guest",
+            DispatchConsumersAsync = true
         };
         // 开启连接
         this.CreateConnect();
@@ -62,21 +63,24 @@ public class Producer
             basicProperties: null,
             body: body
         );
-        Console.WriteLine("发送消息 {0} 到交换机 {1} 的 {2} 路由键", message, EXCHANGE_NAME, routingKey);
+        Console.WriteLine("[{0}] 发送消息 {1} 到交换机 {2} 的 {3} 路由键", DateTime.Now.ToLongTimeString(), message, EXCHANGE_NAME, routingKey);
     }
 
     public void Run()
     {
         while (true)
         {
-            Console.Write("请输入要发送的路由Key：");
-            var inputRoutingKey = Console.ReadLine();
-            if (inputRoutingKey == null) continue;
-            Console.Write("请输入要发送的消息：");
-            var input = Console.ReadLine();
-            if (input == null) continue;
-            string routingKey = inputRoutingKey.ToString();
-            string message = input.ToString();
+            //Console.Write("请输入要发送的路由Key：");
+            //var inputRoutingKey = Console.ReadLine();
+            //if (inputRoutingKey == null) continue;
+            //Console.Write("请输入要发送的消息：");
+            //var input = Console.ReadLine();
+            //if (input == null) continue;
+            //string routingKey = inputRoutingKey.ToString();
+            //string message = input.ToString();
+            Thread.Sleep(950);
+            string routingKey = "info";
+            string message = Guid.NewGuid().ToString();
             Publish(routingKey, message);
         }
     }

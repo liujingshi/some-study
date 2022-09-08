@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tXkPUQwolt3Nw3bj0bcN2khtCAXNj3kJrSjyxp5KEbtm9+nXc2ML+b2n/TScLyJhLozA8RsLB+QQoUFZqm4CNA==",
+  "dgSpecHash": "70mHK7kWNvaoz7qcIT3zPUlhqZyxRm8ZTVpNRilQLnP4N+APvFNTbHlxcQoPpVKPkDg59pPaIfgYLDjtT0Hapg==",
   "success": true,
-  "projectFilePath": "E:\\Code\\Project\\some-study\\demo\\ack-c1\\ack-c1.csproj",
+  "projectFilePath": "E:\\code\\project\\some-study\\demo\\ack-c1\\ack-c1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\LiuJingShi\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
-    "C:\\Users\\LiuJingShi\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\LiuJingShi\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }
