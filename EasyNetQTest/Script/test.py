@@ -22,14 +22,18 @@ def asyncPrint(*args):
 def pub():
     for i in range(100):
         time.sleep(0.5)
-        asyncPrint("{0}/100".format(i))
+        asyncPrint("{0}/10000".format(i))
         asyncPost("http://localhost:5278/Publish", { "msg": "Publish{0}".format(i) })
 
 def pubapp():
-    for i in range(100):
-        time.sleep(0.5)
-        asyncPrint("{0}/100".format(i))
-        asyncPost("http://localhost:5148/App", { "msg": "App{0}".format(i) })
+    for i in range(500):
+        time.sleep(0.1)
+        asyncPrint("{0}/500".format(i))
+        asyncPost("http://localhost:5148/App/a", { "msg": "App-{0}".format(i) })
+        asyncPost("http://localhost:5148/App/b", { "msg": "App-{0}".format(i) })
+        asyncPost("http://localhost:5148/App/c", { "msg": "App-{0}".format(i) })
+        asyncPost("http://localhost:5148/App/d", { "msg": "App-{0}".format(i) })
+        asyncPost("http://localhost:5148/App/e", { "msg": "App-{0}".format(i) })
 
 def sub():
     asyncGet("http://localhost:5148/App");

@@ -1,4 +1,6 @@
 using EasyNetQ;
+using EasyNetQ.AutoSubscribe;
+using System.Reflection;
 
 namespace EasyService;
 
@@ -23,13 +25,18 @@ public class Program
             "password=guest;" +
             "requestedHeartbeat=60;" +
             "prefetchcount=50;" +
-            "publisherConfirms=false;" +
+            "publisherConfirms=true;" +
             "persistentMessages=true;" +
             "product=SubscriberService;" +
             "platform=Subscriber;" +
             "timeout=10");
 
         var app = builder.Build();
+
+        // ×Ô¶¯¶©ÔÄ
+        var bus = app.Services.GetRequiredService<IBus>();
+        var subscriber = new AutoSubscriber(bus, "easy_service");
+        subscriber.Subscribe(Assembly.GetExecutingAssembly().GetTypes());
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
@@ -39,7 +46,6 @@ public class Program
         }
 
         app.UseAuthorization();
-
 
         app.MapControllers();
 

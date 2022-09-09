@@ -31,6 +31,66 @@ public class AppController : ControllerBase
         });
     }
 
+    [HttpPost]
+    [Route("a")]
+    public ActionResult PostA([FromForm] string msg)
+    {
+        _rabbitBus.PubSub.PublishAsync(new MessageA(msg));
+
+        return Ok(new
+        {
+            success = true,
+        });
+    }
+
+    [HttpPost]
+    [Route("b")]
+    public ActionResult PostB([FromForm] string msg)
+    {
+        _rabbitBus.PubSub.PublishAsync(new MessageB(msg));
+
+        return Ok(new
+        {
+            success = true,
+        });
+    }
+
+    [HttpPost]
+    [Route("c")]
+    public ActionResult PostC([FromForm] string msg)
+    {
+        _rabbitBus.PubSub.PublishAsync(new MessageC(msg));
+
+        return Ok(new
+        {
+            success = true,
+        });
+    }
+
+    [HttpPost]
+    [Route("d")]
+    public ActionResult PostD([FromForm] string msg)
+    {
+        _rabbitBus.PubSub.PublishAsync(new MessageD(msg));
+
+        return Ok(new
+        {
+            success = true,
+        });
+    }
+
+    [HttpPost]
+    [Route("e")]
+    public ActionResult PostE([FromForm] string msg)
+    {
+        _rabbitBus.PubSub.PublishAsync(new MessageE(msg));
+
+        return Ok(new
+        {
+            success = true,
+        });
+    }
+
     [HttpGet]
     public IEnumerable<object> Get()
     {
